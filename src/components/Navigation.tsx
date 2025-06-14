@@ -22,7 +22,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-white">
               <span className="text-neon-blue">VALOR</span>
-              <span className="text-neon-purple ml-1">MC</span>
+              <span className="text-neon-purple ml-1">NETWORK</span>
             </Link>
           </div>
 

@@ -1,7 +1,7 @@
 
 const ServerInfoPanel = () => {
   const serverInfo = [
-    { icon: '🎮', label: 'Server', value: 'Valor | Bedrock + Java Compatible' },
+    { icon: '🎮', label: 'Server', value: 'ValorNetwork | Bedrock + Java Compatible' },
     { icon: '🗡️', label: 'Features', value: 'Factions PvP | Raiding | Economy | Crossplay' },
     { icon: '🌍', label: 'IP', value: '<ip>' },
     { icon: '📱', label: 'Bedrock Port', value: '<bedrockport>' },
@@ -17,7 +17,7 @@ const ServerInfoPanel = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Server <span className="text-neon-blue">Information</span>
           </h2>
-          <p className="text-gray-400 text-lg">Everything you need to know about Valor MC</p>
+          <p className="text-gray-400 text-lg">Everything you need to know about ValorNetwork</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

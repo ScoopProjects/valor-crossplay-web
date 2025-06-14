@@ -56,7 +56,7 @@ const Store = () => {
       <div className="pt-24 pb-16 bg-dark-card">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            <span className="text-neon-blue">Valor</span> Store
+            <span className="text-neon-blue">ValorNetwork</span> Store
           </h1>
           <p className="text-xl text-gray-300 mb-8">
             Unlock exclusive perks and dominate the battlefield

@@ -36,12 +36,12 @@ const HeroSection = () => {
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-pulse-glow">
           <span className="text-neon-blue">VALOR</span>
-          <span className="text-neon-purple"> MC</span>
+          <span className="text-neon-purple">NETWORK</span>
         </h1>
 
         {/* Tagline */}
         <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-          🛡️ Join Valor – The Ultimate Cross-Platform Factions Experience!
+          🛡️ Join ValorNetwork – The Ultimate Cross-Platform Factions Experience!
         </p>
 
         {/* CTA Buttons */}

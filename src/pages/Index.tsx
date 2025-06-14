@@ -10,9 +10,9 @@ const Index = () => {
     <div className="min-h-screen bg-dark-bg text-white">
       <Navigation />
       <HeroSection />
+      <ServerInfoPanel />
       <FeaturesSection />
       <CrossplaySection />
-      <ServerInfoPanel />
     </div>
   );
 };

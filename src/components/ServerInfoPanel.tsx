@@ -3,9 +3,9 @@ const ServerInfoPanel = () => {
   const serverInfo = [
     { icon: '🎮', label: 'Server', value: 'Valor | Bedrock + Java Compatible' },
     { icon: '🗡️', label: 'Features', value: 'Factions PvP | Raiding | Economy | Crossplay' },
-    { icon: '🌍', label: 'IP', value: 'coming soon' },
-    { icon: '📱', label: 'Bedrock Port', value: 'coming soon' },
-    { icon: '💻', label: 'Java Port', value: 'coming soon' },
+    { icon: '🌍', label: 'IP', value: '<ip>' },
+    { icon: '📱', label: 'Bedrock Port', value: '<bedrockport>' },
+    { icon: '💻', label: 'Java Port', value: '<javaport>' },
     { icon: '🧭', label: 'Version', value: '1.8.8 - 1.20+' },
     { icon: '🟢', label: 'Status', value: 'Online 24/7' },
   ];

@@ -6,14 +6,15 @@ const HeroSection = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pulse"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2025&auto=format&fit=crop')`,
         }}
       >
-        <div className="absolute inset-0 bg-dark-bg/80 animate-pulse"></div>
-        {/* Animated overlay patterns */}
-        <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/10 via-transparent to-neon-purple/10 animate-glow"></div>
+        <div className="absolute inset-0 bg-dark-bg/70"></div>
+        {/* Animated gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/20 via-transparent to-neon-purple/20 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neon-blue/5 to-neon-purple/10 animate-glow"></div>
       </div>
 
       {/* Floating particles effect */}
@@ -22,6 +23,8 @@ const HeroSection = () => {
         <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-neon-purple rounded-full animate-pulse opacity-60"></div>
         <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-neon-blue rounded-full animate-glow opacity-50"></div>
         <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-neon-purple rounded-full animate-bounce opacity-80"></div>
+        <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-neon-blue rounded-full animate-pulse opacity-40"></div>
+        <div className="absolute bottom-1/4 right-1/6 w-2 h-2 bg-neon-purple rounded-full animate-glow opacity-60"></div>
       </div>
 
       {/* Content */}
@@ -60,12 +63,12 @@ const HeroSection = () => {
             💬 Discord
           </Button>
         </div>
+      </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-neon-blue rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
-          </div>
+      {/* Scroll indicator - repositioned */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <div className="w-6 h-10 border-2 border-neon-blue rounded-full flex justify-center bg-dark-bg/30 backdrop-blur-sm">
+          <div className="w-1 h-3 bg-neon-blue rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </div>

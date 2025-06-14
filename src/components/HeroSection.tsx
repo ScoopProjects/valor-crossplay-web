@@ -4,14 +4,24 @@ import { Button } from '@/components/ui/button';
 const HeroSection = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Animated Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pulse"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2070&auto=format&fit=crop')`,
         }}
       >
-        <div className="absolute inset-0 bg-dark-bg/80"></div>
+        <div className="absolute inset-0 bg-dark-bg/80 animate-pulse"></div>
+        {/* Animated overlay patterns */}
+        <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/10 via-transparent to-neon-purple/10 animate-glow"></div>
+      </div>
+
+      {/* Floating particles effect */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-neon-blue rounded-full animate-bounce opacity-70"></div>
+        <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-neon-purple rounded-full animate-pulse opacity-60"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-neon-blue rounded-full animate-glow opacity-50"></div>
+        <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-neon-purple rounded-full animate-bounce opacity-80"></div>
       </div>
 
       {/* Content */}

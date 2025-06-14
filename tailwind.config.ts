@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom gaming colors
+				'neon-blue': '#00BFFF',
+				'neon-purple': '#8A2BE2',
+				'dark-bg': '#0a0a0a',
+				'dark-card': '#1a1a1a',
+				'dark-hover': '#2a2a2a',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +91,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(0, 191, 255, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px rgba(0, 191, 255, 0.8)'
+					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						textShadow: '0 0 10px rgba(138, 43, 226, 0.5)'
+					},
+					'50%': {
+						textShadow: '0 0 20px rgba(138, 43, 226, 0.8)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'neon-gradient': 'linear-gradient(135deg, #00BFFF 0%, #8A2BE2 100%)',
 			}
 		}
 	},
